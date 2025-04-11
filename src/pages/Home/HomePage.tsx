@@ -1,5 +1,6 @@
 import Navbar from "../../components/Navigation/Navbar";
 import "./HomePage.css";
+import CursorFollower from "../../components/UI/CustomCursor";
 
 function HomePage() {
   return (
@@ -16,7 +17,7 @@ function HomePage() {
               each is vetted for a stress-free shopping experience
             </h5>
           </div>
-          <div className="box box2 bg-green-200 "></div>
+          <div className="box box2 bg-green-200 "><CursorFollower/></div>
           <div className="box box3 bg-amber-300"></div>
           <div className="box box4 bg-red-400"></div>
         </div>
