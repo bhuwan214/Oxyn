@@ -1,5 +1,5 @@
 import { Link } from 'react-router';
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import SearchBar from './SearchComponent/SearchBar';
 import { IoMenu, IoClose } from "react-icons/io5";
 
@@ -7,14 +7,32 @@ import { IoMenu, IoClose } from "react-icons/io5";
 function Navbar() {
   // const [isCartOpen, setIsCartOpen] = useState(false);
   const [isMenuOpen, setMenuOpen] = useState(false);
+const menuRef =useRef<HTMLDivElement>(null);
 
+const toggleMenu =()=> setMenuOpen(prev=>!prev);
+
+//Handle click outside 
+useEffect(()=>{
+const handleClickOutside =(event:MouseEvent)=>{
+  if (menuRef.current && !menuRef.current.contains(event.target as Node)){
+    setMenuOpen(false);
+  }
+}
+
+if (isMenuOpen) {
+  document.addEventListener('mousedown', handleClickOutside);
+}
+
+return () => {
+  document.removeEventListener('mousedown', handleClickOutside);
+};
+
+},[isMenuOpen])
   // const toggleCart = () => {
   //   setIsCartOpen(!isCartOpen);
   // };
 
-  const toggleMenu = () => {
-    setMenuOpen(!isMenuOpen);
-  };
+
 
   return (
     <nav className="bg-slate-800 text-white p-4 pl-10 pr-5 relative">
@@ -50,8 +68,8 @@ function Navbar() {
       </div>
 
       {/* Mobile Menu */}
-      <div
-        className={`md:hidden absolute top-15 left-97 w-50 bg-slate-800 text-white flex flex-col items-start gap-4 p-4 z-10 
+      <div ref={menuRef}
+        className={`md:hidden absolute top-15 left-103.5 w-50 bg-slate-800 text-white flex flex-col items-start gap-4 p-4 z-10 
         transition-all duration-300 ease-in-out 
         ${isMenuOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-2 pointer-events-none'}`}
       >

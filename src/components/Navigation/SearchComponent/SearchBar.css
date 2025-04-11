@@ -23,6 +23,10 @@
     color: #555;
   }
   
+  .search-container  input:focus-within{
+    
+  }
+
   @media(max-width:768px){
 
     .search-container{
