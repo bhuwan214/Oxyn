@@ -1,0 +1,56 @@
+@font-face {
+    font-family:NeueMachina;
+    src: url(./assets/NeueMachinaBlack.ttf);
+  }
+  
+  @font-face {
+    font-family:PPNeue ;
+    src: url(./assets/PPNeueMachina.ttf);
+  }
+
+.bento-box{
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-template-areas: 
+    "box1 box1 box2 box2"
+    "box1 box1 box2 box2"
+    "box3 box4 box2 box2";
+    width: 980px;
+    height: 650px;
+   
+  }
+  .box{
+    border-radius: 20px;
+  }
+
+  .box1 { grid-area: box1; background: #D7D6D7; max-height:500px}
+.box2 { grid-area: box2; background: #D7D6D7; background-image: url("src/assets/images/capguy.jpg"); background-size:cover; background-position:center;  }
+.box3 { grid-area: box3; background: #D7D6D7;background-image: url("src/assets/images/capguy3.jpg"); background-size:cover; background-position:center;  }
+.box4 { grid-area: box4; background: #D7D6D7; background-image: url("src/assets/images/capguy2.jpg"); background-size:cover; background-position:center; }
+
+  .bento-box h1{
+padding: 20px;
+    font-family: NeueMachina;
+    font-size: 3.2rem;
+    line-height: 60px;
+  }
+
+
+  @media (max-width:780px){
+
+    .bento-box{
+        height: 600px;
+    }
+
+    .bento-box h1{
+        font-size: 2.5rem;
+        line-height: 40px;
+      }
+
+
+  }
+    
+  
