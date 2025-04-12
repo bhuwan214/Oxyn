@@ -22,16 +22,23 @@
 
 }
 
+@keyframes bubbleMove {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-10px) scale(1.05);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}
+
+.animate-bubble {
+  animation: bubbleMove 3s ease-in-out infinite;
+}
 
 
-
-
-
-
-
-
-
-  
 .bento-box{
     display: grid;
     grid-template-columns: repeat(4, 1fr);

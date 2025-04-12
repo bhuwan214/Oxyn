@@ -33,35 +33,48 @@ function HomePage() {
 }
 
 export default HomePage;
+type BubbleProps = {
+  ImgUrl: string;
+  position: string;
+};
 
-
-export const  Description = ()=>{
-return(
-<div className="text-container">
-<div className="text-content flex  p-5  w-[75vw]">
-<h3 className="p-4 text-center "> Puremod Clothing for Elevated Everyday Life . Styles change
-<span className="inline-flex items-center justify-center  border-2 rounded-full pr-4 pl-4 m-3 w-fit">
-  <FaStarOfLife className="text-2xl h-6 w-6 mr-2" />
-  with seasons
-</span>
-    
-    united by the liberating essence of travel-inspired  lightheart </h3>
-</div>
-
-<ImageBubble ImgUrl="src\assets\images\image-bubble1.jpg" position='top-[102%] left-[35%]' />
-<ImageBubble ImgUrl="src\assets\images\image-bubble2.jpg" position ="top-[130%] left-[58%]"/>
-</div>
-)
-}
-
-export const ImageBubble = ({ImgUrl,position}) => {
+export const Description = () => {
   return (
-    <div className={`bubble-container absolute ${position}  w-30 h-30 bg-amber-300 border-2 border-gray-300  rounded-full`}>
+    <div className="text-container">
+      <div className="text-content group flex p-5 w-[75vw]">
+        <h3 className="p-4 text-center  leading-relaxed">
+          Puremod Clothing for Elevated Everyday Life. Styles change
+          <span className="inline-flex items-center justify-center border-2 rounded-full pr-4 pl-4 m-3 w-fit bg-white">
+            <FaStarOfLife className="text-2xl h-6 w-6 mr-2" />
+            with seasons
+          </span>
+          united by the liberating essence of travel-inspired lightheart
+        </h3>
+
+        {/* 🫧 Bubble Images */}
+        <ImageBubble
+          ImgUrl="src/assets/images/image-bubble1.jpg"
+          position="top-[102%] left-[35%]"
+        />
+        <ImageBubble
+          ImgUrl="src/assets/images/image-bubble2.jpg"
+          position="top-[130%] left-[68%]"
+        />
+      </div>
+    </div>
+  );
+};
+
+export const ImageBubble = ({ ImgUrl, position }: BubbleProps) => {
+  return (
+    <div
+      className={`absolute ${position} w-30 h-30 rounded-full border-2 border-white hidden group-hover:block animate-bubble`}
+    >
       <img
         src={ImgUrl}
         alt="Bubble"
-        className="bubble-image   w-30 h-30 object-cover object-[50%_35%]  rounded-full"
+        className="w-full h-full object-cover object-[50%_35%] rounded-full"
       />
     </div>
   );
-}
+};
