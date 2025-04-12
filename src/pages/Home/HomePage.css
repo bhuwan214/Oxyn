@@ -8,8 +8,31 @@
     src: url(./assets/PPNeueMachina.ttf);
   }
 
-.bento-box{
+  @font-face {
+    font-family:Helvetica-neue ;
+    src: url(./assets/HelveticaNeueBold.ttf);
+  }
 
+.text-content {
+  font-family:  Helvetica, sans-serif;
+  font-size: 3.2rem;
+  font-weight: bold;
+  /* line-height: 40px; */
+  /* text-align: center; */
+
+}
+
+
+
+
+
+
+
+
+
+
+  
+.bento-box{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -27,7 +50,7 @@
   }
 
   .box1 { grid-area: box1; background: #D7D6D7; max-height:500px}
-.box2 { grid-area: box2; background: #D7D6D7; background-image: url("src/assets/images/capguy.jpg"); background-size:cover; background-position:center; z-index: 10; }
+.box2 { grid-area: box2; background: #D7D6D7; background-image: url("src/assets/images/capguy.jpg"); background-size:cover; background-position:center;  }
 .box3 { grid-area: box3; background: #D7D6D7;background-image: url("src/assets/images/capguy3.jpg"); background-size:cover; background-position:center;  }
 .box4 { grid-area: box4; background: #D7D6D7; background-image: url("src/assets/images/capguy2.jpg"); background-size:cover; background-position:center; }
 
@@ -49,14 +72,12 @@ padding: 20px;
     background-size:cover; 
     background-position:center;
     transition: ease-in-out 0.7s;
-    z-index: 10; 
   }
   .box3:hover{
     background-image: url("src/assets/images/cap.jpg");
     background-size:cover; 
     background-position:center;
     transition: ease-in-out 0.9s;
-    z-index: 10; 
   }
 
 
@@ -75,3 +96,4 @@ padding: 20px;
   }
     
   
+ 
