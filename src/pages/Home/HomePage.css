@@ -13,13 +13,32 @@
     src: url(./assets/HelveticaNeueBold.ttf);
   }
 
-.text-content {
-  font-family:  Helvetica, sans-serif;
+  *{
+  font-family: NeueMachina;
+  }
+
+.text-content h3 , h3 > span {
+  font-family:  Helvetica;
   font-size: 3.2rem;
   font-weight: bold;
   /* line-height: 40px; */
   /* text-align: center; */
 
+}
+
+.product-name{
+  font-family: NeueMachina;
+  font-size: 2rem;
+  line-height: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+.product-price{
+  font-family: NeueMachina;
+  font-size: 1.5rem;
+  line-height: 20px;
+  text-align: center;
+  margin-top: 10px;
 }
 
 @keyframes bubbleMove {
@@ -35,6 +54,7 @@
 }
 
 .animate-bubble {
+  
   animation: bubbleMove 3s ease-in-out infinite;
 }
 
@@ -65,6 +85,21 @@
   background-color: rgba(246, 247, 247, 0.479);
 }
 
+button{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.label ,.badge {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+h5{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+}
 
 
   .bento-box h1{

@@ -2,6 +2,10 @@ import Navbar from "../../components/Navigation/Navbar";
 import "./HomePage.css";
 import CursorFollower from "../../components/UI/CustomCursor";
 import { FaStarOfLife } from "react-icons/fa";
+import  ShopEssentials  from "../../components/Product/Product";
+
+
+
 
 
 function HomePage() {
@@ -28,6 +32,9 @@ function HomePage() {
       <Description/>
 
       </div>
+      <div className="flex justify-center align center" > <ShopEssentials/></div>
+      
+      
     </div>
   );
 }
@@ -42,7 +49,7 @@ export const Description = () => {
   return (
     <div className="text-container">
       <div className="text-content group flex p-5 w-[75vw]">
-        <h3 className="p-4 text-center  leading-relaxed">
+        <h3 className="p-4 text-center  leading-relaxed ">
           Puremod Clothing for Elevated Everyday Life. Styles change
           <span className="inline-flex items-center justify-center border-2 rounded-full pr-4 pl-4 m-3 w-fit bg-white">
             <FaStarOfLife className="text-2xl h-6 w-6 mr-2" />
@@ -68,7 +75,7 @@ export const Description = () => {
 export const ImageBubble = ({ ImgUrl, position }: BubbleProps) => {
   return (
     <div
-      className={`absolute ${position} w-30 h-30 rounded-full border-2 border-white hidden group-hover:block animate-bubble`}
+      className={`absolute ${position} w-30 h-30 rounded-full border-2 border-white hidden group-hover:block animate-bubble `}
     >
       <img
         src={ImgUrl}
