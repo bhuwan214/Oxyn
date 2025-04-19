@@ -1,3 +1,5 @@
+import PuremodFooter from "../../components/Navigation/footer";
+import Navbar from "../../components/Navigation/Navbar";
 
 const products = [
   {
@@ -27,7 +29,8 @@ const products = [
 ];
 
 const Menswear = () => {
-  return (
+  return (<>
+    <Navbar/>
     <div style={{ padding: '2rem' }}>
       <h2 style={{ fontSize: '2rem', marginBottom: '1rem' }}>🔥 Trendy Men's Clothing</h2>
       <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
@@ -64,6 +67,8 @@ const Menswear = () => {
         ))}
       </div>
     </div>
+    <PuremodFooter/>
+    </>
   );
 };
 

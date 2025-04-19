@@ -2,6 +2,7 @@ import { Link } from 'react-router';
 import { useEffect, useRef, useState } from 'react';
 import SearchBar from './SearchComponent/SearchBar';
 import { IoMenu, IoClose } from "react-icons/io5";
+import { NavLink } from 'react-router';
 
 
 function Navbar() {
@@ -42,10 +43,11 @@ return () => {
     
         {/* Desktop Menu */}
         <div className="category hidden md:flex space-x-6 gap-8 capitalize">
-          <Link to="/menswear" className="hover:text-yellow-300 transition-colors">Menswear</Link>
-          <Link to="/womenswear" className="hover:text-yellow-300 transition-colors">Womenswear</Link>
-          <Link to="/kids" className="hover:text-yellow-300 transition-colors">Kids</Link>
-          <Link to="/sale" className="hover:text-yellow-300 transition-colors">Sale</Link> 
+        <NavLink to="/menswear"   style={({ isActive }) => ({ color: isActive ? "yellow" : "white",})}  className="hover:text-yellow-300 transition-colors" >Menswear</NavLink>
+        <NavLink to="/womenswear" style={({ isActive }) => ({ color: isActive ? "yellow" : "white",})}  className="hover:text-yellow-300 transition-colors" >Womenswear</NavLink>
+        <NavLink to="/kids" style={({ isActive }) => ({ color: isActive ? "yellow" : "white",})}  className="hover:text-yellow-300 transition-colors" >Kids</NavLink>
+        <NavLink to="/sale" style={({ isActive }) => ({ color: isActive ? "yellow" : "white",})} className="hover:text-yellow-300  transition-colors" >Sale</NavLink>
+
         </div>
 
         {/* Right Side Buttons */}
@@ -73,10 +75,10 @@ return () => {
         transition-all duration-300 ease-in-out 
         ${isMenuOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-2 pointer-events-none'}`}
       >
-        <Link to="/menswear" className="hover:text-yellow-300" onClick={toggleMenu}>Menswear</Link>
-        <Link to="/womenswear" className="hover:text-yellow-300" onClick={toggleMenu}>Womenswear</Link>
-        <Link to="/kids" className="hover:text-yellow-300" onClick={toggleMenu}>Kids</Link>
-        <Link to="/sale" className="hover:text-yellow-300" onClick={toggleMenu}>Sale</Link>
+        <NavLink to="/menswear"   style={({ isActive }) => ({ color: isActive ? "yellow" : "white",})}  className="hover:text-yellow-300" onClick={toggleMenu}>Menswear</NavLink>
+        <NavLink to="/womenswear" style={({ isActive }) => ({ color: isActive ? "yellow" : "white",})}  className="hover:text-yellow-300" onClick={toggleMenu}>Womenswear</NavLink>
+        <NavLink to="/kids" style={({ isActive }) => ({ color: isActive ? "yellow" : "white",})}  className="hover:text-yellow-300" onClick={toggleMenu}>Kids</NavLink>
+        <NavLink to="/sale" style={({ isActive }) => ({ color: isActive ? "yellow" : "white",})} className="hover:text-yellow-300" onClick={toggleMenu}>Sale</NavLink>
       </div>
     </nav>
   );

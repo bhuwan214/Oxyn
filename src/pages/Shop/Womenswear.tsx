@@ -1,9 +1,19 @@
+import Navbar from "../../components/Navigation/Navbar";
+import PuremodFooter from "../../components/Navigation/footer";
 
 function Womenswear() {
   return (
-    <div>
-      this is womenswear page
-    </div>
+<>
+<Navbar/>
+<div className="content h-[60vh]">
+
+
+ 
+</div>
+
+<PuremodFooter/>
+</>
+
   )
 }
 

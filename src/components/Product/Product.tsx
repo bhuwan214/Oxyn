@@ -42,7 +42,7 @@ export const ProductCard = ({ product }: { product: Product }) => {
 
 const ShopEssentials = () => {
   return (
-    <section className="px-4 md:px-16 py-8  w-[80vw]">
+    <section className="px-4 md:px-16 py-8  w-[90vw] max-w-7xl mx-auto">
       <h2 className="text-3xl font-bold mb-4">SHOP BY ESSENTIALS</h2>
 
       <div className="flex flex-wrap gap-2 mb-8">
@@ -74,7 +74,7 @@ export default ShopEssentials;
       <div className="flex flex-col lg:flex-row gap-6 items-stretch max-w-278 w-full max-h-120 h-full ">
         
         {/* Left Image */}
-        <div className="flex-1 rounded-3xl overflow-hidden">
+        <div className="flex-1 rounded-3xl overflow-hidden   ">
           <img 
             src="src/components/Product/images/girly.jpg" 
             alt="Model" 
