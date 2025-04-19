@@ -2,8 +2,8 @@ import Navbar from "../../components/Navigation/Navbar";
 import "./HomePage.css";
 import CursorFollower from "../../components/UI/CustomCursor";
 import { FaStarOfLife } from "react-icons/fa";
-import  ShopEssentials  from "../../components/Product/Product";
-
+import  ShopEssentials, { InfoSection }  from "../../components/Product/Product";
+import PuremodFooter from "../../components/Navigation/footer";
 
 
 
@@ -32,8 +32,14 @@ function HomePage() {
       <Description/>
 
       </div>
-      <div className="flex justify-center align center" > <ShopEssentials/></div>
-      
+      <div className="flex flex-col justify-center items-center" > 
+        <ShopEssentials/>
+        <InfoSection/>
+        
+        
+        </div>
+        <PuremodFooter/>
+
       
     </div>
   );

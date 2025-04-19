@@ -1,3 +1,4 @@
+import { FaLeaf, FaBullseye } from 'react-icons/fa';
 
 type Product = {
   id: number;
@@ -62,3 +63,74 @@ const ShopEssentials = () => {
 };
 
 export default ShopEssentials;
+
+
+
+ export const InfoSection = () => {
+  return (
+    <div className="flex flex-col gap-10 p-8 items-center">
+
+      {/* Top Section */}
+      <div className="flex flex-col lg:flex-row gap-6 items-stretch max-w-278 w-full max-h-120 h-full ">
+        
+        {/* Left Image */}
+        <div className="flex-1 rounded-3xl overflow-hidden">
+          <img 
+            src="src/components/Product/images/girly.jpg" 
+            alt="Model" 
+            className="w-full h-full object-cover object-center rounded-3xl" 
+          />
+        </div>
+
+        {/* Right Text */}
+        <div className="flex-1 bg-green-800 text-white rounded-3xl p-6 flex flex-col justify-center">
+          <h2 className="text-3xl lg:text-4xl font-extrabold mb-6 ml-5">
+            WE’RE CHANGING <br />THE WAY THINGS <br />GET MADE
+          </h2>
+          
+          <div className="grid sm:grid-cols-2 gap-15 mt-4 border-1 p-10 pl-5 rounded-3xl">
+            <div>
+              <div className="flex items-center gap-2 text-lg font-bold">
+                <FaLeaf />
+                SUSTAINABILITY
+              </div>
+              <p className="text-sm mt-2 text-white/90">
+                We’re challenging conventional retail, putting an end to toxic stock and waste.
+              </p>
+            </div>
+
+            <div>
+              <div className="flex items-center gap-2 text-lg font-bold">
+                <FaBullseye />
+                MISSION
+              </div>
+              <p className="text-sm mt-2 text-white/90">
+                We empower creators to make incredible, sustainable fashion.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Bottom Section */}
+      <div className="flex flex-col items-center gap-10">
+        <h2 className="text-3xl lg:text-4xl font-extrabold text-center mt-5  mb-5">
+          WANT TO DESIGN YOUR OWN? <br /> CALM, WE CAN DO IT
+        </h2>
+
+        <div className="rounded-3xl overflow-hidden  max-w-278 w-full">
+          <img 
+            src="src/components/Product/images/Customer-Support.jpg" 
+            alt="Design your own" 
+            className="w-full object-cover"
+          />
+        </div>
+
+        <button className="mt-4 px-6 py-2 rounded-full bg-black text-white text-sm hover:bg-gray-800 transition">
+          ▶ Watch to learn more
+        </button>
+      </div>
+    </div>
+  );
+};
+;
