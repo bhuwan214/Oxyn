@@ -1,0 +1,40 @@
+[
+  {
+    "id": 1,
+    "name": "BENIES",
+    "price": "$100",
+    "imgUrl": "https://i.pinimg.com/736x/64/93/37/64933725b9e58e8de1a6b9fe3cdaf4a8.jpg",
+    "label": "NEW ARRIVAL"
+  },
+
+  {
+    "id": 2,
+    "name": "JOGGER",
+    "price": "$100",
+    "imgUrl": "src/components/Product/images/jogger.jpg", 
+    "badge": "GET OFF 20%"
+  },
+
+  {
+    "id": 3,
+    "name": "CARDIGAN",
+    "price": "$100",
+    "imgUrl": "src/components/Product/images/knits.jpg"
+  },
+
+  {
+    "id": 4,
+    "name": "PANTS",
+    "price": "$100",
+    "imgUrl": "src/components/Product/images/sweeter.jpg",
+    "label": "ADD TO CART"
+  },
+
+  {
+    "id": 5,
+    "name": "CASUAL CAPS",
+    "price": "$100",
+    "imgUrl": "src/components/Product/images/caps.jpg"
+  }
+
+]

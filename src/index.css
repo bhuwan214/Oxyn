@@ -10,4 +10,8 @@
   src: url(./assets/PPNeueMachina.ttf);
 }
 
+body{
+  overflow-x: hidden;
+}
+
 
