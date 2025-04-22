@@ -5,9 +5,7 @@ import { ProductCard } from "../../components/Product/Product";
 
 export const Menswear = () => {
 
-  const products = ProductData;
-
-
+  const products =ProductData.filter((product) => product.sex.toLowerCase() === "male");
   return (
     <>
       <Navbar />
@@ -18,10 +16,7 @@ export const Menswear = () => {
                 <ProductCard product={product} key={product.id} />
               ))}
             </div>
-
             </div>
-
-
       <PuremodFooter />
     </>
   );

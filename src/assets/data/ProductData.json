@@ -131,7 +131,7 @@
   ,{
         "id": 14,
         "name": "CASUAL CAPS",
-        "price": "$100",
+        "price": "$120",
         "imgUrl": "src/components/Product/images/sweetergirl.jpg",
         "category":"sweeter",
         "sex":"female"
