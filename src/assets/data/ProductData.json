@@ -4,7 +4,10 @@
     "name": "BENIES",
     "price": "$100",
     "imgUrl": "https://i.pinimg.com/736x/64/93/37/64933725b9e58e8de1a6b9fe3cdaf4a8.jpg",
-    "label": "NEW ARRIVAL"
+    "label": "NEW ARRIVAL",
+    "category":"cap",
+    "sex":"male"
+    
   },
 
   {
@@ -12,14 +15,21 @@
     "name": "JOGGER",
     "price": "$100",
     "imgUrl": "src/components/Product/images/jogger.jpg", 
-    "badge": "GET OFF 20%"
+    "badge": "GET OFF 20%",
+    "category":"Lower",
+    "sex":"male"
+
+
   },
 
   {
     "id": 3,
     "name": "CARDIGAN",
     "price": "$100",
-    "imgUrl": "src/components/Product/images/knits.jpg"
+    "imgUrl": "src/components/Product/images/knits.jpg",
+    "category":"sweeter",
+    "sex":"male"
+
   },
 
   {
@@ -27,14 +37,232 @@
     "name": "PANTS",
     "price": "$100",
     "imgUrl": "src/components/Product/images/sweeter.jpg",
-    "label": "ADD TO CART"
+    "label": "ADD TO CART",
+    "category":"pant",
+    "sex":"male"
+
   },
 
   {
     "id": 5,
     "name": "CASUAL CAPS",
     "price": "$100",
-    "imgUrl": "src/components/Product/images/caps.jpg"
+    "imgUrl": "src/components/Product/images/caps.jpg",
+    "category":"cap",
+    "sex":"male"
+
+  },
+
+  {
+    "id": 6,
+    "name": "CASUAL CAPS",
+    "price": "$100",
+    "imgUrl": "src/components/Product/images/carhartt-gary.jpg",
+    "category":"jacket",
+    "sex":"male"
+
   }
+  ,
+
+  {
+    "id": 7,
+    "name": "CASUAL CAPS",
+    "price": "$100",
+    "imgUrl": "src/components/Product/images/hat1.jpg",
+    "category":"cap",
+    "sex":"male"
+
+  },
+
+  {
+    "id": 8,
+    "name": "CASUAL CAPS",
+    "price": "$100",
+    "imgUrl": "src/components/Product/images/hat2.jpg",
+    "category":"cap",
+    "sex":"male"
+
+  },  {
+    "id": 9,
+    "name": "CASUAL CAPS",
+    "price": "$100",
+    "imgUrl": "src/components/Product/images/hat3.jpg",
+    "category":"cap",
+    "sex":"male"
+
+  }
+    ,
+    {
+        "id": 10,
+        "name": "CASUAL CAPS",
+        "price": "$100",
+        "imgUrl": "src/components/Product/images/hat4.jpg",
+        "category":"cap",
+    "sex":"male"
+
+    },
+    {
+        "id": 11,
+        "name": "CASUAL CAPS",
+        "price": "$100",
+        "imgUrl": "src/components/Product/images/girlyhat.jpg",
+        "category":"cap",
+    "sex":"female"
+
+    },
+    {
+        "id": 12,
+        "name": "CASUAL CAPS",
+        "price": "$100",
+        "imgUrl": "src/components/Product/images/girlyhat2.jpg",
+        "category":"cap",
+    "sex":"female"
+
+    },
+    {
+        "id": 13,
+        "name": "CASUAL CAPS",
+        "price": "$100",
+        "imgUrl": "src/components/Product/images/girlyhat3.jpg",
+        "category":"cap",
+    "sex":"female"
+
+    }
+  ,{
+        "id": 14,
+        "name": "CASUAL CAPS",
+        "price": "$100",
+        "imgUrl": "src/components/Product/images/sweetergirl.jpg",
+        "category":"sweeter",
+        "sex":"female"
+
+    },
+    {
+        "id": 15,
+        "name": "CASUAL JACKET",
+        "price": "$100",
+        "imgUrl": "https://i.pinimg.com/474x/d1/8c/ae/d18caef22cd77915d087a7d3ad906091.jpg",
+        "category":"jacket",
+        "sex":"male"
+    },
+    {
+      "id": 16,
+      "name": "WINTER JACKET",
+      "price": "$100",
+      "imgUrl": "https://i.pinimg.com/474x/a0/2e/da/a02eda41dd5206bd013d161e6c631f2a.jpg",
+      "description":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio distinctio deserunt dignissimos quae atque, mollitia, consectetur ut aliquid porro nam eos ullam blanditiis ipsam quasi molestiae. Modi eos quos repudiandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eum deserunt dignissimos labore quae, eveniet a quidem commodi, omnis quo est sapiente fugit doloribus numquam. Voluptatibus sed quidem exercitationem nesciunt.",
+      "category":"jacket",
+      "sex":"male"
+  },  {
+    "id": 17,
+    "name": "Y2K FLUX HOODIE",
+    "price": "$100",
+    "imgUrl": "https://i.pinimg.com/736x/73/c8/4e/73c84ee372d452ed4365ee5dd4fa9523.jpg",
+    "description":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio distinctio deserunt dignissimos quae atque, mollitia, consectetur ut aliquid porro nam eos ullam blanditiis ipsam quasi molestiae. Modi eos quos repudiandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eum deserunt dignissimos labore quae, eveniet a quidem commodi, omnis quo est sapiente fugit doloribus numquam. Voluptatibus sed quidem exercitationem nesciunt.",
+    "category":"hoddie",
+    "sex":"male"
+},  {
+  "id": 18,
+  "name": "VINTAGE NIKE SWOOSH",
+  "price": "$100",
+  "imgUrl": "https://i.pinimg.com/736x/00/4a/84/004a8494ce4377496d4f138b93dcb465.jpg",
+  "description":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio distinctio deserunt dignissimos quae atque, mollitia, consectetur ut aliquid porro nam eos ullam blanditiis ipsam quasi molestiae. Modi eos quos repudiandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eum deserunt dignissimos labore quae, eveniet a quidem commodi, omnis quo est sapiente fugit doloribus numquam. Voluptatibus sed quidem exercitationem nesciunt.",
+  "category":"hoddie",
+  "sex":"unisex"
+},  
+{
+  "id": 19,
+  "name": "CASUAL HOODIE",
+  "price": "$100",
+  "description":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio distinctio deserunt dignissimos quae atque, mollitia, consectetur ut aliquid porro nam eos ullam blanditiis ipsam quasi molestiae. Modi eos quos repudiandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eum deserunt dignissimos labore quae, eveniet a quidem commodi, omnis quo est sapiente fugit doloribus numquam. Voluptatibus sed quidem exercitationem nesciunt.",
+  "imgUrl": "https://i.pinimg.com/736x/b8/23/55/b8235597e745b96732d0028aef92cd98.jpg",
+  "category":"hoodie",
+  "sex":"male"
+},
+{
+  "id": 20,
+  "name": "VINTAGE NIKE",
+  "price": "$100",
+  "imgUrl": "https://i.pinimg.com/736x/81/9e/10/819e1091b38a50ad75c431ce89c74377.jpg",
+  "description":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio distinctio deserunt dignissimos quae atque, mollitia, consectetur ut aliquid porro nam eos ullam blanditiis ipsam quasi molestiae. Modi eos quos repudiandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eum deserunt dignissimos labore quae, eveniet a quidem commodi, omnis quo est sapiente fugit doloribus numquam. Voluptatibus sed quidem exercitationem nesciunt.",
+  "category":"hoddie",
+  "sex":"unisex"
+},
+{
+  "id": 21,
+  "name": "CASUAL CAPS",
+  "price": "$100",
+  "imgUrl": "src/components/Product/images/sweetergirl2.jpg",
+  "description":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio distinctio deserunt dignissimos quae atque, mollitia, consectetur ut aliquid porro nam eos ullam blanditiis ipsam quasi molestiae. Modi eos quos repudiandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eum deserunt dignissimos labore quae, eveniet a quidem commodi, omnis quo est sapiente fugit doloribus numquam. Voluptatibus sed quidem exercitationem nesciunt.",
+  "category":"sweeter",
+  "sex":"female"
+},
+{
+  "id": 22,
+  "name": "CASUAL CAPS",
+  "price": "$100",
+  "imgUrl": "src/components/Product/images/sweetergirl2.jpg",
+  "category":"sweeter",
+  "sex":"female"
+},
+{
+  "id": 23,
+  "name": "CASUAL CAPS",
+  "price": "$100",
+  "imgUrl": "src/components/Product/images/sweetergirl2.jpg",
+  "category":"sweeter",
+  "sex":"female"
+},  {
+  "id": 24,
+  "name": "CASUAL CAPS",
+  "price": "$100",
+  "imgUrl": "src/components/Product/images/sweetergirl2.jpg",
+  "category":"sweeter",
+  "sex":"female"
+},  {
+  "id": 25,
+  "name": "CASUAL CAPS",
+  "price": "$100",
+  "imgUrl": "src/components/Product/images/sweetergirl2.jpg",
+  "category":"sweeter",
+  "sex":"female"
+},  {
+  "id": 26,
+  "name": "CASUAL CAPS",
+  "price": "$100",
+  "imgUrl": "src/components/Product/images/sweetergirl2.jpg",
+  "category":"sweeter",
+  "sex":"female"
+},  {
+  "id": 27,
+  "name": "CASUAL CAPS",
+  "price": "$100",
+  "imgUrl": "src/components/Product/images/sweetergirl2.jpg",
+  "category":"sweeter",
+  "sex":"female"
+},  {
+  "id": 28,
+  "name": "CASUAL CAPS",
+  "price": "$100",
+  "imgUrl": "src/components/Product/images/sweetergirl2.jpg",
+  "category":"sweeter",
+  "sex":"female"
+},  {
+  "id": 29,
+  "name": "CASUAL CAPS",
+  "price": "$100",
+  "imgUrl": "src/components/Product/images/sweetergirl2.jpg",
+  "category":"sweeter",
+  "sex":"female"
+}, 
+{
+  "id": 30,
+  "name": "CASUAL CAPS",
+  "price": "$100",
+  "imgUrl": "src/components/Product/images/sweetergirl2.jpg",
+  "category":"sweeter",
+  "sex":"female"
+}
+
 
 ]
