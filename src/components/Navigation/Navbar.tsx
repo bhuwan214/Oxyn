@@ -70,7 +70,7 @@ return () => {
 
       {/* Mobile Menu */}
       <div ref={menuRef}
-        className={`md:hidden absolute top-15 left-103.5 w-50 bg-slate-800 text-white flex flex-col items-start gap-4 p-4 z-10 
+        className={`md:hidden absolute top-15 right-0 w-50 bg-slate-800 text-white flex flex-col items-start gap-4 p-4 z-10 
         transition-all duration-300 ease-in-out 
         ${isMenuOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-2 pointer-events-none'}`}
       >
