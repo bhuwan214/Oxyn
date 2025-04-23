@@ -2,11 +2,13 @@ import { FaLeaf, FaBullseye } from 'react-icons/fa';
 import {Link} from 'react-router'
 import ProductData from "../../assets/data/ProductData.json"
 
-type Product = {
+export type Product = {
   id: number;
   name: string;
   price: string;
   imgUrl: string;
+  type:string;
+  category:string;
   label?: string;
   badge?: string;
 };
@@ -19,10 +21,11 @@ const filters = ['ALL', 'SUMMER COLL.', 'NEW ARIV.', 'BEST SELL', 'FLASH'];
 export const ProductCard = ({ product }:{product:Product}) => {
   return (
     <Link to={`/product/${product.id}`}>
-      <div className="border p-4 shadow hover:shadow-xl hover:translate-0.5 transition">
-        <img src={product.imgUrl} alt={product.name} className="w-full h-64 object-cover mb-2" />
-        <h2 className="font-bold text-lg">{product.name}</h2>
+      <div className="border p-4 shadow hover:shadow-xl  ease-in-out  hover:scale-105  whitespace-nowrap hover:whitespace-break-spaces ">
+        <img src={product.imgUrl} alt={product.name} className="w-full h-64 object-cover mb-2" loading='lazy' />
+        <h2 className="font-bold text-lg   text-ellipsis  overflow-hidden  ">{product.name}</h2>
         <p className="text-gray-600">{product.price}</p>
+      
       </div>
     </Link>
   );

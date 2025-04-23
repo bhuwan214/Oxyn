@@ -4,7 +4,6 @@ import HomePage from "./pages/Home/HomePage";
 import {Menswear} from "./pages/Shop/Menswear";
 import Child from "./pages/Shop/Child";
 import Womenswear from "./pages/Shop/Womenswear";
-import Sales from "./pages/Shop/Sales";
 import ProductDetail from "./pages/ProductDetail";
 import "./index.css";
 
@@ -17,7 +16,6 @@ function App(){
 <Route path="/menswear" element= {<Menswear/>}/>
 <Route path="/womenswear" element= {<Womenswear/>}/>
 <Route path="/kids" element= {<Child/>}/>
-<Route path="sale" element={<Sales/>}/>
 <Route path="/product/:id" element={<ProductDetail />} />
     </Routes>
     </BrowserRouter>

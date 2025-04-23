@@ -46,7 +46,6 @@ return () => {
         <NavLink to="/menswear"   style={({ isActive }) => ({ color: isActive ? "yellow" : "white",})}  className="hover:text-yellow-300 transition-colors" >Menswear</NavLink>
         <NavLink to="/womenswear" style={({ isActive }) => ({ color: isActive ? "yellow" : "white",})}  className="hover:text-yellow-300 transition-colors" >Womenswear</NavLink>
         <NavLink to="/kids" style={({ isActive }) => ({ color: isActive ? "yellow" : "white",})}  className="hover:text-yellow-300 transition-colors" >Kids</NavLink>
-        <NavLink to="/sale" style={({ isActive }) => ({ color: isActive ? "yellow" : "white",})} className="hover:text-yellow-300  transition-colors" >Sale</NavLink>
 
         </div>
 
@@ -78,7 +77,6 @@ return () => {
         <NavLink to="/menswear"   style={({ isActive }) => ({ color: isActive ? "yellow" : "white",})}  className="hover:text-yellow-300" onClick={toggleMenu}>Menswear</NavLink>
         <NavLink to="/womenswear" style={({ isActive }) => ({ color: isActive ? "yellow" : "white",})}  className="hover:text-yellow-300" onClick={toggleMenu}>Womenswear</NavLink>
         <NavLink to="/kids" style={({ isActive }) => ({ color: isActive ? "yellow" : "white",})}  className="hover:text-yellow-300" onClick={toggleMenu}>Kids</NavLink>
-        <NavLink to="/sale" style={({ isActive }) => ({ color: isActive ? "yellow" : "white",})} className="hover:text-yellow-300" onClick={toggleMenu}>Sale</NavLink>
       </div>
     </nav>
   );

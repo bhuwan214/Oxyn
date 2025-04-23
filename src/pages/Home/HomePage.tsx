@@ -3,14 +3,16 @@ import "./HomePage.css";
 import CursorFollower from "../../components/UI/CustomCursor";
 import { FaStarOfLife } from "react-icons/fa";
 import  ShopEssentials, { InfoSection }  from "../../components/Product/Product";
-import PuremodFooter from "../../components/Navigation/footer";
+import PuremodFooter from "../../components/Navigation/Footer";
 
 
 
 
 function HomePage() {
   return (
-    <div>
+    <div  className="  
+    "
+    >
       <Navbar />
       <div className="container flex justify-center mx-auto px-4 py-8">
         <div className="bento-box">
@@ -23,9 +25,9 @@ function HomePage() {
               each is vetted for a stress-free shopping experience
             </h5>
           </div>
-          <div className="box box2 bg-green-200 "><CursorFollower/></div>
-          <div className="box box3 bg-amber-300"></div>
-          <div className="box box4 bg-red-400"></div>
+          <div className="box box2  "><CursorFollower/></div>
+          <div className="box box3 "></div>
+          <div className="box box4 "></div>
         </div>
       </div>
       <div className="text-content flex justify-center item-center  p-5 text-4xl w-full">

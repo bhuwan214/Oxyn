@@ -1,12 +1,12 @@
 import Navbar from "../../components/Navigation/Navbar";
-import PuremodFooter from "../../components/Navigation/footer";
+import PuremodFooter from "../../components/Navigation/Footer";
 import ProductData from "../../assets/data/ProductData.json"
 import { ProductCard } from "../../components/Product/Product";
 
 
 function Womenswear() {
 
-  const products =ProductData.filter((product)=>product.sex.toLowerCase() === "female")
+  const products =ProductData.filter((product)=>product.category.toLowerCase() === "female")
   return (
 <>
 <Navbar/>
