@@ -1,9 +1,10 @@
 [
   {
     "id": 1,
-    "name": "BENIES",
-    "price": "$100",
-    "imgUrl": "https://i.pinimg.com/736x/64/93/37/64933725b9e58e8de1a6b9fe3cdaf4a8.jpg",
+    "name": "STOCK BENIES",
+    "price": "$75",
+    "imgUrl": "https://i.pinimg.com/474x/3e/73/7a/3e737a0f82eb5d0d4358475319ef2c09.jpg",
+    "description":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio distinctio deserunt dignissimos quae atque, mollitia, consectetur ut aliquid porro nam eos ullam blanditiis ipsam quasi molestiae. Modi eos quos repudiandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eum deserunt dignissimos labore quae, eveniet a quidem commodi, omnis quo est sapiente fugit doloribus numquam. Voluptatibus sed quidem exercitationem nesciunt.",
     "label": "NEW ARRIVAL",
     "category":"cap",
     "sex":"male"
@@ -12,11 +13,12 @@
 
   {
     "id": 2,
-    "name": "JOGGER",
-    "price": "$100",
-    "imgUrl": "src/components/Product/images/jogger.jpg", 
+    "name": "OLD MONEY SHIRT",
+    "price": "$90",
+    "imgUrl": "https://i.pinimg.com/474x/f8/cc/be/f8ccbe3480647b2ebdecb8c8700ff350.jpg", 
+    "description":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio distinctio deserunt dignissimos quae atque, mollitia, consectetur ut aliquid porro nam eos ullam blanditiis ipsam quasi molestiae. Modi eos quos repudiandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eum deserunt dignissimos labore quae, eveniet a quidem commodi, omnis quo est sapiente fugit doloribus numquam. Voluptatibus sed quidem exercitationem nesciunt.",
     "badge": "GET OFF 20%",
-    "category":"Lower",
+    "category":"shirt",
     "sex":"male"
 
 
@@ -25,8 +27,9 @@
   {
     "id": 3,
     "name": "CARDIGAN",
-    "price": "$100",
-    "imgUrl": "src/components/Product/images/knits.jpg",
+    "price": "$150",
+    "imgUrl": "https://i.pinimg.com/474x/32/e0/3a/32e03a257237b28e1919d0a9f58c4146.jpg",
+   "description":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio distinctio deserunt dignissimos quae atque, mollitia, consectetur ut aliquid porro nam eos ullam blanditiis ipsam quasi molestiae. Modi eos quos repudiandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eum deserunt dignissimos labore quae, eveniet a quidem commodi, omnis quo est sapiente fugit doloribus numquam. Voluptatibus sed quidem exercitationem nesciunt.",
     "category":"sweeter",
     "sex":"male"
 
@@ -34,9 +37,10 @@
 
   {
     "id": 4,
-    "name": "PANTS",
-    "price": "$100",
-    "imgUrl": "src/components/Product/images/sweeter.jpg",
+    "name": "WASHED STRAIGHT DENIM",
+    "price": "$110",
+    "imgUrl": "https://i.pinimg.com/736x/6c/d8/4c/6cd84c694ee0b67d4a21adb2b3b5951e.jpg",
+   "description":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio distinctio deserunt dignissimos quae atque, mollitia, consectetur ut aliquid porro nam eos ullam blanditiis ipsam quasi molestiae. Modi eos quos repudiandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eum deserunt dignissimos labore quae, eveniet a quidem commodi, omnis quo est sapiente fugit doloribus numquam. Voluptatibus sed quidem exercitationem nesciunt.",
     "label": "ADD TO CART",
     "category":"pant",
     "sex":"male"
@@ -47,7 +51,8 @@
     "id": 5,
     "name": "CASUAL CAPS",
     "price": "$100",
-    "imgUrl": "src/components/Product/images/caps.jpg",
+    "imgUrl": "https://i.pinimg.com/474x/db/88/d4/db88d478b8d79bc3373832f8943c5c95.jpg",
+    "description":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio distinctio deserunt dignissimos quae atque, mollitia, consectetur ut aliquid porro nam eos ullam blanditiis ipsam quasi molestiae. Modi eos quos repudiandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eum deserunt dignissimos labore quae, eveniet a quidem commodi, omnis quo est sapiente fugit doloribus numquam. Voluptatibus sed quidem exercitationem nesciunt.",
     "category":"cap",
     "sex":"male"
 
@@ -55,9 +60,10 @@
 
   {
     "id": 6,
-    "name": "CASUAL CAPS",
+    "name": "CARHARTT JACKET",
     "price": "$100",
-    "imgUrl": "src/components/Product/images/carhartt-gary.jpg",
+    "imgUrl": "https://i.pinimg.com/736x/6d/a1/7a/6da17a2102eea7186859eaf4b0d16eae.jpg",
+    "description":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio distinctio deserunt dignissimos quae atque, mollitia, consectetur ut aliquid porro nam eos ullam blanditiis ipsam quasi molestiae. Modi eos quos repudiandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eum deserunt dignissimos labore quae, eveniet a quidem commodi, omnis quo est sapiente fugit doloribus numquam. Voluptatibus sed quidem exercitationem nesciunt.",
     "category":"jacket",
     "sex":"male"
 
@@ -67,72 +73,79 @@
   {
     "id": 7,
     "name": "CASUAL CAPS",
-    "price": "$100",
-    "imgUrl": "src/components/Product/images/hat1.jpg",
+    "price": "$50",
+    "imgUrl": "https://i.pinimg.com/736x/ce/46/fc/ce46fc8ba62b88e7d8d7f96625493eb7.jpg",
+    "description":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio distinctio deserunt dignissimos quae atque, mollitia, consectetur ut aliquid porro nam eos ullam blanditiis ipsam quasi molestiae. Modi eos quos repudiandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eum deserunt dignissimos labore quae, eveniet a quidem commodi, omnis quo est sapiente fugit doloribus numquam. Voluptatibus sed quidem exercitationem nesciunt.",
     "category":"cap",
-    "sex":"male"
+    "sex":"unisex"
 
   },
 
   {
     "id": 8,
-    "name": "CASUAL CAPS",
-    "price": "$100",
-    "imgUrl": "src/components/Product/images/hat2.jpg",
+    "name": "PRAZELS CAPS",
+    "price": "$80",
+    "imgUrl": "https://i.pinimg.com/474x/74/92/37/7492371b6066cac035271784f601bb19.jpg",
+   "description":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio distinctio deserunt dignissimos quae atque, mollitia, consectetur ut aliquid porro nam eos ullam blanditiis ipsam quasi molestiae. Modi eos quos repudiandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eum deserunt dignissimos labore quae, eveniet a quidem commodi, omnis quo est sapiente fugit doloribus numquam. Voluptatibus sed quidem exercitationem nesciunt.",
     "category":"cap",
-    "sex":"male"
+    "sex":"unsex"
 
   },  {
     "id": 9,
-    "name": "CASUAL CAPS",
+    "name": "BRIMLESS CORDUROY HAT",
     "price": "$100",
-    "imgUrl": "src/components/Product/images/hat3.jpg",
+    "imgUrl": "https://i.pinimg.com/474x/06/c5/35/06c5353c94a216ea9b1e159e651975d5.jpg",
+    "description":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio distinctio deserunt dignissimos quae atque, mollitia, consectetur ut aliquid porro nam eos ullam blanditiis ipsam quasi molestiae. Modi eos quos repudiandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eum deserunt dignissimos labore quae, eveniet a quidem commodi, omnis quo est sapiente fugit doloribus numquam. Voluptatibus sed quidem exercitationem nesciunt.",
     "category":"cap",
-    "sex":"male"
+    "sex":"unisex"
 
-  }
-    ,
-    {
+  },
+  {
         "id": 10,
-        "name": "CASUAL CAPS",
+        "name": "HIKING PANT",
         "price": "$100",
-        "imgUrl": "src/components/Product/images/hat4.jpg",
-        "category":"cap",
-    "sex":"male"
+        "imgUrl": "https://i.pinimg.com/736x/21/be/95/21be9517cfa1d59f4ac1f87cabd302a7.jpg",
+        "description":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio distinctio deserunt dignissimos quae atque, mollitia, consectetur ut aliquid porro nam eos ullam blanditiis ipsam quasi molestiae. Modi eos quos repudiandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eum deserunt dignissimos labore quae, eveniet a quidem commodi, omnis quo est sapiente fugit doloribus numquam. Voluptatibus sed quidem exercitationem nesciunt.",
+        "category":"pant",
+        "sex":"male"
 
     },
     {
         "id": 11,
-        "name": "CASUAL CAPS",
+        "name": "FLORAL HALF TEE",
         "price": "$100",
-        "imgUrl": "src/components/Product/images/girlyhat.jpg",
-        "category":"cap",
-    "sex":"female"
+        "imgUrl": "https://i.pinimg.com/736x/d8/df/ea/d8dfead8b733f90d82cd59c59ed8a2a0.jpg",
+       "description":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio distinctio deserunt dignissimos quae atque, mollitia, consectetur ut aliquid porro nam eos ullam blanditiis ipsam quasi molestiae. Modi eos quos repudiandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eum deserunt dignissimos labore quae, eveniet a quidem commodi, omnis quo est sapiente fugit doloribus numquam. Voluptatibus sed quidem exercitationem nesciunt.",
+        "category":"shirt",
+       "sex":"female"
 
     },
     {
         "id": 12,
-        "name": "CASUAL CAPS",
+        "name": "STRIPS SHIRT",
         "price": "$100",
-        "imgUrl": "src/components/Product/images/girlyhat2.jpg",
-        "category":"cap",
-    "sex":"female"
+        "imgUrl": "https://i.pinimg.com/736x/f0/41/bc/f041bcbdd45ff06161cda513619f928b.jpg",
+        "description":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio distinctio deserunt dignissimos quae atque, mollitia, consectetur ut aliquid porro nam eos ullam blanditiis ipsam quasi molestiae. Modi eos quos repudiandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eum deserunt dignissimos labore quae, eveniet a quidem commodi, omnis quo est sapiente fugit doloribus numquam. Voluptatibus sed quidem exercitationem nesciunt.",
+        "category":"shirt",
+        "sex":"female"
 
     },
     {
         "id": 13,
-        "name": "CASUAL CAPS",
+        "name": "WAFFLE COLAR TEE",
         "price": "$100",
-        "imgUrl": "src/components/Product/images/girlyhat3.jpg",
-        "category":"cap",
-    "sex":"female"
+        "imgUrl": "https://i.pinimg.com/736x/57/e8/85/57e885952084a64bf3b25fb1c897fa40.jpg",
+       "description":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio distinctio deserunt dignissimos quae atque, mollitia, consectetur ut aliquid porro nam eos ullam blanditiis ipsam quasi molestiae. Modi eos quos repudiandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eum deserunt dignissimos labore quae, eveniet a quidem commodi, omnis quo est sapiente fugit doloribus numquam. Voluptatibus sed quidem exercitationem nesciunt.",
+        "category":"shirt",
+      "sex":"female"
 
     }
   ,{
         "id": 14,
-        "name": "CASUAL CAPS",
+        "name": "CASUAL CARDIGANS",
         "price": "$120",
-        "imgUrl": "src/components/Product/images/sweetergirl.jpg",
+        "imgUrl": "https://i.pinimg.com/474x/0a/2f/7c/0a2f7c796346dc534009b8a132d001f9.jpg",
+       "description":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio distinctio deserunt dignissimos quae atque, mollitia, consectetur ut aliquid porro nam eos ullam blanditiis ipsam quasi molestiae. Modi eos quos repudiandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eum deserunt dignissimos labore quae, eveniet a quidem commodi, omnis quo est sapiente fugit doloribus numquam. Voluptatibus sed quidem exercitationem nesciunt.",
         "category":"sweeter",
         "sex":"female"
 
@@ -142,6 +155,7 @@
         "name": "CASUAL JACKET",
         "price": "$100",
         "imgUrl": "https://i.pinimg.com/474x/d1/8c/ae/d18caef22cd77915d087a7d3ad906091.jpg",
+        "description":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio distinctio deserunt dignissimos quae atque, mollitia, consectetur ut aliquid porro nam eos ullam blanditiis ipsam quasi molestiae. Modi eos quos repudiandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eum deserunt dignissimos labore quae, eveniet a quidem commodi, omnis quo est sapiente fugit doloribus numquam. Voluptatibus sed quidem exercitationem nesciunt.",
         "category":"jacket",
         "sex":"male"
     },
@@ -159,7 +173,7 @@
     "price": "$100",
     "imgUrl": "https://i.pinimg.com/736x/73/c8/4e/73c84ee372d452ed4365ee5dd4fa9523.jpg",
     "description":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio distinctio deserunt dignissimos quae atque, mollitia, consectetur ut aliquid porro nam eos ullam blanditiis ipsam quasi molestiae. Modi eos quos repudiandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eum deserunt dignissimos labore quae, eveniet a quidem commodi, omnis quo est sapiente fugit doloribus numquam. Voluptatibus sed quidem exercitationem nesciunt.",
-    "category":"hoddie",
+    "category":"hoodie",
     "sex":"male"
 },  {
   "id": 18,
@@ -167,7 +181,7 @@
   "price": "$100",
   "imgUrl": "https://i.pinimg.com/736x/00/4a/84/004a8494ce4377496d4f138b93dcb465.jpg",
   "description":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio distinctio deserunt dignissimos quae atque, mollitia, consectetur ut aliquid porro nam eos ullam blanditiis ipsam quasi molestiae. Modi eos quos repudiandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eum deserunt dignissimos labore quae, eveniet a quidem commodi, omnis quo est sapiente fugit doloribus numquam. Voluptatibus sed quidem exercitationem nesciunt.",
-  "category":"hoddie",
+  "category":"hoodie",
   "sex":"unisex"
 },  
 {
@@ -185,83 +199,101 @@
   "price": "$100",
   "imgUrl": "https://i.pinimg.com/736x/81/9e/10/819e1091b38a50ad75c431ce89c74377.jpg",
   "description":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio distinctio deserunt dignissimos quae atque, mollitia, consectetur ut aliquid porro nam eos ullam blanditiis ipsam quasi molestiae. Modi eos quos repudiandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eum deserunt dignissimos labore quae, eveniet a quidem commodi, omnis quo est sapiente fugit doloribus numquam. Voluptatibus sed quidem exercitationem nesciunt.",
-  "category":"hoddie",
+  "category":"hoodie",
   "sex":"unisex"
 },
 {
   "id": 21,
-  "name": "CASUAL CAPS",
+  "name": "RIBBED HEATHERED HOODIE",
   "price": "$100",
-  "imgUrl": "src/components/Product/images/sweetergirl2.jpg",
+  "imgUrl": "https://i.pinimg.com/736x/01/01/13/010113b9f44794a4c7b0934c3f58c53f.jpg",
+  "description":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio distinctio deserunt dignissimos quae atque, mollitia, consectetur ut aliquid porro nam eos ullam blanditiis ipsam quasi molestiae. Modi eos quos repudiandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eum deserunt dignissimos labore quae, eveniet a quidem commodi, omnis quo est sapiente fugit doloribus numquam. Voluptatibus sed quidem exercitationem nesciunt.",
+  "category":"hoodie",
+  "sex":"female"
+},
+{
+  "id": 22,
+  "name": "ECO CHARCOAL Hoodie",
+  "price": "$100",
+  "description":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio distinctio deserunt dignissimos quae atque, mollitia, consectetur ut aliquid porro nam eos ullam blanditiis ipsam quasi molestiae. Modi eos quos repudiandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eum deserunt dignissimos labore quae, eveniet a quidem commodi, omnis quo est sapiente fugit doloribus numquam. Voluptatibus sed quidem exercitationem nesciunt.",
+  "imgUrl": "https://i.pinimg.com/736x/04/31/b7/0431b744bd423f6f82c51afb6abe0544.jpg",
+  "category":"hoodie",
+  "sex":"unisex"
+},
+{
+  "id": 23,
+  "name": "GOOD TIMES TEE",
+  "price": "$110",
+  "imgUrl": "https://i.pinimg.com/474x/42/1a/77/421a772f96ac1e4988438d6b4745bcb6.jpg",
+  "description":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio distinctio deserunt dignissimos quae atque, mollitia, consectetur ut aliquid porro nam eos ullam blanditiis ipsam quasi molestiae. Modi eos quos repudiandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eum deserunt dignissimos labore quae, eveniet a quidem commodi, omnis quo est sapiente fugit doloribus numquam. Voluptatibus sed quidem exercitationem nesciunt.",
+  "category":"shirt",
+  "sex":"kids"
+},  {
+  "id": 24,
+  "name": "CORDUROY QUILTED TROUSERS",
+  "price": "$100",
+  "imgUrl": "https://i.pinimg.com/736x/bf/33/6d/bf336d87ee8397fda975e64dc7ef2e9d.jpg",
+  "description":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio distinctio deserunt dignissimos quae atque, mollitia, consectetur ut aliquid porro nam eos ullam blanditiis ipsam quasi molestiae. Modi eos quos repudiandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eum deserunt dignissimos labore quae, eveniet a quidem commodi, omnis quo est sapiente fugit doloribus numquam. Voluptatibus sed quidem exercitationem nesciunt.",
+  "category":"trouser",
+  "sex":"kids"
+},  {
+  "id": 25,
+  "name": "DENIM CARGO PANTS",
+  "price": "$110",
+  "imgUrl": "https://i.pinimg.com/736x/56/47/a4/5647a4c65931c9a4c69ba12892e76651.jpg",
+  "description":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio distinctio deserunt dignissimos quae atque, mollitia, consectetur ut aliquid porro nam eos ullam blanditiis ipsam quasi molestiae. Modi eos quos repudiandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eum deserunt dignissimos labore quae, eveniet a quidem commodi, omnis quo est sapiente fugit doloribus numquam. Voluptatibus sed quidem exercitationem nesciunt.",
+  "category":"pant",
+  "sex":"kids"
+},  {
+  "id": 26,
+  "name": "TROPICAL CAPS",
+  "price": "$70",
+  "imgUrl": "https://i.pinimg.com/736x/e5/56/b8/e556b88b52027e4ce45adf72a69b1108.jpg",
+  "description":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio distinctio deserunt dignissimos quae atque, mollitia, consectetur ut aliquid porro nam eos ullam blanditiis ipsam quasi molestiae. Modi eos quos repudiandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eum deserunt dignissimos labore quae, eveniet a quidem commodi, omnis quo est sapiente fugit doloribus numquam. Voluptatibus sed quidem exercitationem nesciunt.",
+  "category":"cap",
+  "sex":"kids"
+},  {
+  "id": 27,
+  "name": "CASUAL CAPS",
+  "price": "$69",
+  "imgUrl": "https://i.pinimg.com/736x/48/48/19/4848194885783086543a07cd09b363d6.jpg",
+  "description":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio distinctio deserunt dignissimos quae atque, mollitia, consectetur ut aliquid porro nam eos ullam blanditiis ipsam quasi molestiae. Modi eos quos repudiandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eum deserunt dignissimos labore quae, eveniet a quidem commodi, omnis quo est sapiente fugit doloribus numquam. Voluptatibus sed quidem exercitationem nesciunt.",
+  "category":"cap",
+  "sex":"kids"
+},  {
+  "id": 28,
+  "name": "CASUAL SCHOOL COLLECTION",
+  "price": "$110",
+  "imgUrl": "https://i.pinimg.com/474x/fc/a3/24/fca324d6e8386c36adfb25142090ecac.jpg",
+  "description":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio distinctio deserunt dignissimos quae atque, mollitia, consectetur ut aliquid porro nam eos ullam blanditiis ipsam quasi molestiae. Modi eos quos repudiandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eum deserunt dignissimos labore quae, eveniet a quidem commodi, omnis quo est sapiente fugit doloribus numquam. Voluptatibus sed quidem exercitationem nesciunt.",
+  "category":"shirt",
+  "sex":"kids"
+},  {
+  "id": 29,
+  "name": "DENIM JACKET",
+  "price": "$100",
+  "imgUrl": "https://i.pinimg.com/736x/6a/09/a2/6a09a205a87ad639eb75ef129349f7e8.jpg",
+  "description":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio distinctio deserunt dignissimos quae atque, mollitia, consectetur ut aliquid porro nam eos ullam blanditiis ipsam quasi molestiae. Modi eos quos repudiandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eum deserunt dignissimos labore quae, eveniet a quidem commodi, omnis quo est sapiente fugit doloribus numquam. Voluptatibus sed quidem exercitationem nesciunt.",
+  "category":"jacket",
+  "sex":"female"
+}, 
+{
+  "id": 30,
+  "name": "LEATHER JACKET",
+  "price": "$100",
+  "imgUrl": "https://i.pinimg.com/474x/7a/6f/35/7a6f35e90e6c804363afca3495900fa9.jpg",
   "description":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio distinctio deserunt dignissimos quae atque, mollitia, consectetur ut aliquid porro nam eos ullam blanditiis ipsam quasi molestiae. Modi eos quos repudiandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eum deserunt dignissimos labore quae, eveniet a quidem commodi, omnis quo est sapiente fugit doloribus numquam. Voluptatibus sed quidem exercitationem nesciunt.",
   "category":"sweeter",
   "sex":"female"
 },
 {
-  "id": 22,
-  "name": "CASUAL CAPS",
-  "price": "$100",
-  "imgUrl": "src/components/Product/images/sweetergirl2.jpg",
-  "category":"sweeter",
-  "sex":"female"
-},
-{
-  "id": 23,
-  "name": "CASUAL CAPS",
-  "price": "$100",
-  "imgUrl": "src/components/Product/images/sweetergirl2.jpg",
-  "category":"sweeter",
-  "sex":"female"
-},  {
-  "id": 24,
-  "name": "CASUAL CAPS",
-  "price": "$100",
-  "imgUrl": "src/components/Product/images/sweetergirl2.jpg",
-  "category":"sweeter",
-  "sex":"female"
-},  {
-  "id": 25,
-  "name": "CASUAL CAPS",
-  "price": "$100",
-  "imgUrl": "src/components/Product/images/sweetergirl2.jpg",
-  "category":"sweeter",
-  "sex":"female"
-},  {
-  "id": 26,
-  "name": "CASUAL CAPS",
-  "price": "$100",
-  "imgUrl": "src/components/Product/images/sweetergirl2.jpg",
-  "category":"sweeter",
-  "sex":"female"
-},  {
-  "id": 27,
-  "name": "CASUAL CAPS",
-  "price": "$100",
-  "imgUrl": "src/components/Product/images/sweetergirl2.jpg",
-  "category":"sweeter",
-  "sex":"female"
-},  {
-  "id": 28,
-  "name": "CASUAL CAPS",
-  "price": "$100",
-  "imgUrl": "src/components/Product/images/sweetergirl2.jpg",
-  "category":"sweeter",
-  "sex":"female"
-},  {
-  "id": 29,
-  "name": "CASUAL CAPS",
-  "price": "$100",
-  "imgUrl": "src/components/Product/images/sweetergirl2.jpg",
-  "category":"sweeter",
-  "sex":"female"
-}, 
-{
-  "id": 30,
-  "name": "CASUAL CAPS",
-  "price": "$100",
-  "imgUrl": "src/components/Product/images/sweetergirl2.jpg",
-  "category":"sweeter",
-  "sex":"female"
+  "id":31,
+  "name":"FORMAL PANT",
+  "price":"$90",
+  "imgUrl":"https://i.pinimg.com/474x/35/85/95/358595c3505d966719154629349f2626.jpg",
+  "description":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio distinctio deserunt dignissimos quae atque, mollitia, consectetur ut aliquid porro nam eos ullam blanditiis ipsam quasi molestiae. Modi eos quos repudiandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eum deserunt dignissimos labore quae, eveniet a quidem commodi, omnis quo est sapiente fugit doloribus numquam. Voluptatibus sed quidem exercitationem nesciunt.",
+  "category":"pant",
+  "sex":"Female"
 }
 
 
