@@ -1,7 +1,7 @@
 import { BrowserRouter,Routes,Route } from "react-router";
 import HomePage from "./pages/Home/HomePage";
 // import ShopPage from './pages/Shop/ShopPage';
-import {Menswear} from "./pages/Shop/Menswear";
+import Menswear from "./pages/Shop/Menswear";
 import Child from "./pages/Shop/Child";
 import Womenswear from "./pages/Shop/Womenswear";
 import ProductDetail from "./pages/ProductDetail";

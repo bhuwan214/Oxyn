@@ -1,51 +1,46 @@
-import Navbar from "../../components/Navigation/Navbar";
 import PuremodFooter from "../../components/Navigation/Footer";
-import ProductData from "../../assets/data/ProductData.json";
+import Navbar from "../../components/Navigation/Navbar";
+import ProductData from "../../assets/data/ProductData.json"
 import { ProductCard } from "../../components/Product/Product";
+import{ CategoryFilterSort }from "../../hooks/SortFilter";
 import { useState } from "react";
-import { CategoryFilter, SortDropdown } from "../../hooks/SortFilter";
 
-function Womenswear() {
-  const [selectedProduct, setSelectedProduct] = useState("all");
-  const [sortBy, setSortBy] = useState<string>("latest");
+type Product = {
+  id: number;
+  name: string;
+  price: string;
+  type: string;
+  category: string;
+  imgUrl?: string;
+};
 
-  const filters = ["all", "cap", "shirt", "jacket", "pant"];
-  const products = ProductData.filter(
-    (product) => product.category.toLowerCase() === "female"
-  );
-  const filteredProducts = products.filter((product) =>
-    selectedProduct === "all"
-      ? true
-      : product.type.toLowerCase() === selectedProduct.toLowerCase()
-  );
+function  Womenswear() {
 
-  // Sort products
-  const sortedProducts = [...filteredProducts].sort((a, b) => {
-    const priceA = parseFloat(a.price.replace("$", ""));
-    const priceB = parseFloat(b.price.replace("$", ""));
+  const womensProducts:Product[]=ProductData.filter(
+    (product)=> product.category.toLowerCase() === "female");
 
-    if (sortBy === "low") return priceA - priceB;
-    if (sortBy === "high") return priceB - priceA;
-    if (sortBy === "latest") return b.id - a.id; // Assuming higher ID is newer
-    return 0;
-  });
+ const [visibleProducts,setVisibleProducts]=useState<Product[]>(womensProducts)
+
 
   return (
+  
     <>
       <Navbar />
-
       <div className="md:flex flex-row justify-between flex-wrap">
-        <CategoryFilter
-          selected={selectedProduct}
-          setSelected={setSelectedProduct}
-          filters={filters}
+        {/* <CategoryFilter selected={selectedProduct} setSelected={setSelectedProduct} filters={filters} />
+        <SortDropdown sortBy={sortBy} setSortBy={setSortBy} /> */}
+        <CategoryFilterSort
+         onFilterChange={setVisibleProducts} 
+         products={womensProducts}
         />
-        <SortDropdown sortBy={sortBy} setSortBy={setSortBy} />
+
       </div>
+
+
 
       <div className="product-section m-5">
         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
-          {sortedProducts.map((product) => (
+          {visibleProducts.map((product) => (
             <ProductCard product={product} key={product.id} />
           ))}
         </div>
@@ -53,6 +48,6 @@ function Womenswear() {
       <PuremodFooter />
     </>
   );
-}
+};
 
 export default Womenswear;
