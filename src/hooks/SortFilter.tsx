@@ -12,15 +12,16 @@ type Product = {
 
 type Props = {
   onFilterChange: (sortedProducts: Product[]) => void;
+  category: string;
 };
 
-export const CategoryFilterSort: React.FC<Props> = ({ onFilterChange }) => {
+export const CategoryFilterSort: React.FC<Props> = ({ onFilterChange,category }) => {
   const [selectedProduct, setSelectedProduct] = useState("all");
   const [sortBy, setSortBy] = useState<string>("latest");
 
   const filters = ["all", "cap", "shirt", "jacket", "pant"];
   const products: Product[] = ProductData.filter(
-    (product) => product.category.toLowerCase() === "male"
+    (product) => product.category.toLowerCase() === category.toLowerCase()
   );
 
   // Handle sorting and filtering logic and notify parent
@@ -46,7 +47,7 @@ export const CategoryFilterSort: React.FC<Props> = ({ onFilterChange }) => {
 
   return (
     <>
-          <div className="md:flex flex-row justify-between flex-wrap">
+          <div className="sm:flex justify-center flex-row sm:justify-between w-full flex-wrap">
       <div className="flex flex-wrap gap-2 mx-5 my-8">
         {filters.map((filter, index) => (
           <button
@@ -63,7 +64,7 @@ export const CategoryFilterSort: React.FC<Props> = ({ onFilterChange }) => {
         ))}
       </div>
 
-      <div className="mx-5 flex justify-center my-8">
+      <div className="mx-5  flex justify-center my-8 md:mb-10  ">
         <select
           value={sortBy}
           onChange={(e) => setSortBy(e.target.value)}

@@ -1,10 +1,8 @@
+import { useState } from "react";
+import { ProductCard } from "../../components/Product/Product";
 import PuremodFooter from "../../components/Navigation/Footer";
 import Navbar from "../../components/Navigation/Navbar";
-// import ProductData from "../../assets/data/ProductData.json"
-import { ProductCard } from "../../components/Product/Product";
-import { CategoryFilterSort} from "../../hooks/SortFilter";
-import { useState } from "react";
-// import { CategoryFilter, SortDropdown } from "../../hooks/SortFilter";
+import{ CategoryFilterSort }from "../../hooks/SortFilter";
 
 type Product = {
   id: number;
@@ -15,21 +13,14 @@ type Product = {
   imgUrl?: string;
 };
 
-function Child(){
- const [visibleProducts,setVisibleProducts]=useState<Product[]>([])
+function Child (){
+  const [visibleProducts, setVisibleProducts] = useState<Product[]>([]);
 
   return (
-  
     <>
       <Navbar />
-      <div className="md:flex flex-row justify-between flex-wrap">
-        {/* <CategoryFilter selected={selectedProduct} setSelected={setSelectedProduct} filters={filters} />
-        <SortDropdown sortBy={sortBy} setSortBy={setSortBy} /> */}
-        <CategoryFilterSort onFilterChange={setVisibleProducts} />
 
-      </div>
-
-
+   <CategoryFilterSort category="kids"  onFilterChange={setVisibleProducts}/>
 
       <div className="product-section m-5">
         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
@@ -38,6 +29,7 @@ function Child(){
           ))}
         </div>
       </div>
+
       <PuremodFooter />
     </>
   );
