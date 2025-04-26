@@ -6,9 +6,16 @@ import Child from "./pages/Shop/Child";
 import Womenswear from "./pages/Shop/Womenswear";
 import ProductDetail from "./pages/ProductDetail";
 import "./index.css";
+import CartSidebar from "./components/CartSidebar";
+import {Toaster} from "react-hot-toast";
+
 
 function App(){
   return(
+    <>
+    <Toaster position="top-center "  reverse-Order={false}/>
+    <CartSidebar/>
+
     <BrowserRouter>
     <Routes>
 <Route path="/" element ={<HomePage/>}/>
@@ -19,6 +26,7 @@ function App(){
 <Route path="/product/:id" element={<ProductDetail />} />
     </Routes>
     </BrowserRouter>
+    </>
   )
 }
 

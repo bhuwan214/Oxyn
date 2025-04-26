@@ -3,12 +3,16 @@ import { useEffect, useRef, useState } from 'react';
 import SearchBar from './SearchComponent/SearchBar';
 import { IoMenu, IoClose } from "react-icons/io5";
 import { NavLink } from 'react-router';
-
+import { useCart } from '../../context/CartContext';
+import { FaShoppingCart } from "react-icons/fa";
 
 function Navbar() {
-  // const [isCartOpen, setIsCartOpen] = useState(false);
   const [isMenuOpen, setMenuOpen] = useState(false);
 const menuRef =useRef<HTMLDivElement>(null);
+
+const {toggleCart,cart} = useCart();
+const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+
 
 const toggleMenu =()=> setMenuOpen(prev=>!prev);
 
@@ -29,9 +33,6 @@ return () => {
 };
 
 },[isMenuOpen])
-  // const toggleCart = () => {
-  //   setIsCartOpen(!isCartOpen);
-  // };
 
 
 
@@ -54,13 +55,16 @@ return () => {
           <SearchBar/>
 
           <button 
-            // onClick={toggleCart}
-            className="flex items-center bg-yellow-500 hover:bg-yellow-400 text-slate-900 px-4 py-2 rounded-full font-medium transition-colors"
+            onClick={toggleCart}
+            className="flex items-center bg-yellow-500 hover:bg-yellow-400 text-slate-900 px-4 py-2 rounded-full font-medium transition-colors relative"
           >
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 " fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-            </svg>
-          </button>
+              <FaShoppingCart />
+        {totalItems > 0 && (
+          <span className="absolute -top-2 -right-2 text-xs bg-red-600 text-white w-5 h-5 rounded-full flex items-center justify-center">
+            {totalItems}
+          </span>
+        )}
+      </button>
 
           <button onClick={toggleMenu} className="md:hidden">
           {(!isMenuOpen)?<IoMenu className="ham-menu text-3xl" />:<IoClose className="ham-menu text-3xl" />}  
@@ -70,7 +74,7 @@ return () => {
 
       {/* Mobile Menu */}
       <div ref={menuRef}
-        className={`md:hidden absolute top-15 right-0 w-50 bg-slate-800 text-white flex flex-col items-start gap-4 p-4 z-10 
+        className={`md:hidden absolute top-17 right-0 w-50 bg-slate-800 text-white flex flex-col items-start gap-4 p-4  z-50
         transition-all duration-300 ease-in-out 
         ${isMenuOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-2 pointer-events-none'}`}
       >

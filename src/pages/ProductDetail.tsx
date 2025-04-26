@@ -3,9 +3,12 @@ import ProductData from "../assets/data/ProductData.json"
 import Navbar from "../components/Navigation/Navbar"
 import PuremodFooter from "../components/Navigation/Footer";
 import { ProductCard } from "../components/Product/Product";
-import { useEffect } from "react";
+import { useEffect,useState } from "react";
 const Products = ProductData;
 const productSize = ["S", "M", "L", "XL", "XXL"]
+import {useCart} from "../context/CartContext"
+import { toast } from "react-hot-toast";
+
 
 type Product = {
   id: number;
@@ -16,16 +19,47 @@ type Product = {
   imgUrl?: string;
 };
 
+type SizeButtonProps = {
+  selectedSize: string;
+  setSelectedSize: (size: string) => void;
+};
+
+
 
 const ProductDetail = () => {
+  const { addToCart } = useCart();
   const { id } = useParams();
   const product = Products.find((p) => p.id.toString() === id);
+  const [selectedSize, setSelectedSize] = useState<string>("");
+
+  const [isAnimating, setIsAnimating] = useState(false);
+
+  const handleAddToCart = () => {
+    if (!selectedSize) {
+      toast.error("Please select a size before adding to cart.");
+      return;
+    }
+    addToCart({ ...product, size: selectedSize });
+  
+    // Animate the button
+    setIsAnimating(true);
+    setTimeout(() => setIsAnimating(false), 300);
+    
+    toast.success('Item added to cart!', {
+      style: {
+        borderRadius: '10px',
+        background: 'white',
+        color: 'black',
+      },
+    });
+  };
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [id]);
 
   if (!product) return <p>Product not found</p>;
+
 
   return (
 
@@ -40,9 +74,16 @@ const ProductDetail = () => {
             <div className="text-2xl   text-gray-700 mb-4 ">{product.price}</div>
             <h2 className="text-xl  font-semibold  ">Description and fits</h2>
             <p className="text-xl p-2  w-full sm:w-[500px] md:w-[600px] lg:w-[500px]  text-gray-600 ">{product.description}</p>
-            <SizeButton />
+            <SizeButton selectedSize={selectedSize} setSelectedSize={setSelectedSize} />
             <div className="btn md:w-full  flex justify-center ">
-              <button className="bg-black w-[80%]   text-white px-6 py-2 mt-4 mb-4">Add to Cart</button>
+              <button
+               className={`bg-black w-[80%] text-white px-6 py-2 mt-4 mb-4 transition-transform duration-300 hover:cursor-pointer ${
+                isAnimating ? "scale-90" : ""
+              }`}
+               onClick={handleAddToCart}
+               >
+                Add to Cart
+               </button>
             </div>
           </div>
         </div>
@@ -54,7 +95,7 @@ const ProductDetail = () => {
   );
 };
 
-function SizeButton() {
+function SizeButton ({ selectedSize, setSelectedSize }: SizeButtonProps) {
   return (
     <>
       <div className="size-section  flex justify-center ">
@@ -62,9 +103,14 @@ function SizeButton() {
 
           productSize.map((size, index) =>
             <button
+              onClick={() => setSelectedSize(size)}
               key={index}
-              className={`px-5 md:px-6 py-2 text-m font-semibold border-2 rounded-full hover:bg-black hover:text-white transition m-1 md:m-3`}
-            >{size}
+              className={`px-5 md:px-6 py-2 text-m font-semibold border-2 rounded-full m-1 md:m-3 transition ${
+                selectedSize === size
+                  ? "bg-black text-white"
+                  : "border-2 hover:bg-black hover:text-white"
+              }`}   
+               >{size}
             </button>
 
           )
