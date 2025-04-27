@@ -8,12 +8,12 @@ type Product = {
   type: string;
   category: string;
   imgUrl?: string;
-  size?: string; // add size here to Product!
+  size?: string; 
 };
 
 
 type CartItem = Product & {
-  size: string;
+  // size: string;
   quantity: number;
 };
 
@@ -42,7 +42,7 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
     localStorage.setItem("cart", JSON.stringify(cart));
   }, [cart]);
 
-  const addToCart = (product: CartItem) => {
+  const addToCart = (product: Product) => {
     setCart((prev) => {
       const existing = prev.find(
         (item) => item.id === product.id && item.size === product.size

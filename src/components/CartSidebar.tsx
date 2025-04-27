@@ -2,7 +2,7 @@ import { forwardRef } from 'react';
 import { useCart } from "../context/CartContext";
 
 
-const CartSidebar = forwardRef<HTMLDivElement>((prop, ref) => {
+const CartSidebar = forwardRef<HTMLDivElement>((_, ref) => {
   const { cart, removeFromCart, isCartOpen } = useCart();
 
   return (
