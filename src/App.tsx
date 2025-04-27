@@ -19,7 +19,7 @@ function App(){
 
     <Navbar/>
     <Routes>
-<Route path="/" element ={<HomePage/>}/>
+<Route path="/Oxyn" element ={<HomePage/>}/>
 {/* <Route path="/shop" element ={<ShopPage/>}/> */}
 <Route path="/menswear" element= {<Menswear/>}/>
 <Route path="/womenswear" element= {<Womenswear/>}/>
