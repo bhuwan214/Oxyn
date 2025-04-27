@@ -15,6 +15,8 @@ export type Product = {
 
 const products =ProductData
 
+const limitedProducts =products.slice(4,10);
+
 const filters = ['ALL', 'SUMMER COLL.', 'NEW ARIV.', 'BEST SELL', 'FLASH'];
 
 
@@ -45,7 +47,7 @@ const ShopEssentials = () => {
       </div>
 
       <div className="grid grid-cols-2  sm:grid-cols-2  md:grid-cols-3  lg:grid-cols-4 gap-8">
-        {products.map((product) => (
+        {limitedProducts.map((product) => (
           <ProductCard product={product} key={product.id} />
         ))}
       </div>
@@ -102,7 +104,7 @@ export default ShopEssentials;
           </div>
         </div>
       </div>
-
+      
       {/* Bottom Section */}
       <div className="flex flex-col items-center gap-10">
         <h2 className="text-3xl lg:text-4xl font-extrabold text-center mt-5  mb-5">

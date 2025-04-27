@@ -1,5 +1,5 @@
 // src/context/CartContext.tsx
-import { createContext, useContext, useState, ReactNode } from "react";
+import { createContext, useContext, useState, useEffect, ReactNode } from "react";
 
 type Product = {
   id: number;
@@ -8,6 +8,7 @@ type Product = {
   type: string;
   category: string;
   imgUrl?: string;
+  size?: string; // add size here to Product!
 };
 
 type CartItem = Product & { quantity: number };
@@ -15,7 +16,7 @@ type CartItem = Product & { quantity: number };
 type CartContextType = {
   cart: CartItem[];
   addToCart: (product: Product) => void;
-  removeFromCart: (id: number) => void;
+  removeFromCart: (id: number, size?: string) => void;
   toggleCart: () => void;
   isCartOpen: boolean;
 };
@@ -26,20 +27,39 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
   const [cart, setCart] = useState<CartItem[]>([]);
   const [isCartOpen, setCartOpen] = useState(false);
 
+  useEffect(() => {
+    const storedCart = localStorage.getItem("cart");
+    if (storedCart) {
+      setCart(JSON.parse(storedCart));
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("cart", JSON.stringify(cart));
+  }, [cart]);
+
   const addToCart = (product: Product) => {
     setCart((prev) => {
-      const existing = prev.find((item) => item.id === product.id);
+      const existing = prev.find(
+        (item) => item.id === product.id && item.size === product.size
+      );
+
       if (existing) {
         return prev.map((item) =>
-          item.id === product.id ? { ...item, quantity: item.quantity + 1 } : item
+          item.id === product.id && item.size === product.size
+            ? { ...item, quantity: item.quantity + 1 }
+            : item
         );
       }
+
       return [...prev, { ...product, quantity: 1 }];
     });
   };
 
-  const removeFromCart = (id: number) => {
-    setCart((prev) => prev.filter((item) => item.id !== id));
+  const removeFromCart = (id: number, size?: string) => {
+    setCart((prev) =>
+      prev.filter((item) => !(item.id === id && item.size === size))
+    );
   };
 
   const toggleCart = () => setCartOpen((prev) => !prev);

@@ -1,14 +1,13 @@
 import { useParams } from "react-router";
 import ProductData from "../assets/data/ProductData.json"
-import Navbar from "../components/Navigation/Navbar"
-import PuremodFooter from "../components/Navigation/Footer";
 import { ProductCard } from "../components/Product/Product";
 import { useEffect,useState } from "react";
-const Products = ProductData;
-const productSize = ["S", "M", "L", "XL", "XXL"]
 import {useCart} from "../context/CartContext"
 import { toast } from "react-hot-toast";
 
+
+const Products = ProductData;
+const productSize = ["S", "M", "L", "XL", "XXL"]
 
 type Product = {
   id: number;
@@ -35,6 +34,10 @@ const ProductDetail = () => {
   const [isAnimating, setIsAnimating] = useState(false);
 
   const handleAddToCart = () => {
+
+    setIsAnimating(true);
+    setTimeout(() => setIsAnimating(false), 300);
+    
     if (!selectedSize) {
       toast.error("Please select a size before adding to cart.");
       return;
@@ -42,9 +45,7 @@ const ProductDetail = () => {
     addToCart({ ...product, size: selectedSize });
   
     // Animate the button
-    setIsAnimating(true);
-    setTimeout(() => setIsAnimating(false), 300);
-    
+   
     toast.success('Item added to cart!', {
       style: {
         borderRadius: '10px',
@@ -64,7 +65,7 @@ const ProductDetail = () => {
   return (
 
     <>
-    <Navbar/>
+    
       <div className="px-4 md:px-16 py-8 flex items-center  flex-col   w-[100vw]  ">
 
         <div className=" sm:p-8 md:p-10 w-[80vw] flex flex-col  lg:flex-row md:flex-col gap-8 md:flex-end  ">
@@ -90,7 +91,7 @@ const ProductDetail = () => {
 
         <Suggestion currentProduct={product} />
       </div>
-      <PuremodFooter/>
+    
     </>
   );
 };
@@ -123,6 +124,7 @@ function SizeButton ({ selectedSize, setSelectedSize }: SizeButtonProps) {
 type Props ={
   currentProduct:Product
 }
+
 
 function Suggestion({currentProduct}:Props) {
  

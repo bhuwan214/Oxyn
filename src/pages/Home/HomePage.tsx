@@ -1,19 +1,20 @@
-import Navbar from "../../components/Navigation/Navbar";
 import "./HomePage.css";
 import CursorFollower from "../../components/UI/CustomCursor";
 import { FaStarOfLife } from "react-icons/fa";
 import  ShopEssentials, { InfoSection }  from "../../components/Product/Product";
-import PuremodFooter from "../../components/Navigation/Footer";
 
 
 
 
 function HomePage() {
+
+ 
+
   return (
     <div  className="  
     "
     >
-      <Navbar />
+      
       <div className="container flex justify-center mx-auto px-4 py-8">
         <div className="bento-box">
           <div className="box box1 flex flex-col justify-between ">
@@ -40,9 +41,6 @@ function HomePage() {
         
         
         </div>
-        <PuremodFooter/>
-
-      
     </div>
   );
 }

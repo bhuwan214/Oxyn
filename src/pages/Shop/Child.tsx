@@ -1,7 +1,5 @@
 import { useState } from "react";
 import { ProductCard } from "../../components/Product/Product";
-import PuremodFooter from "../../components/Navigation/Footer";
-import Navbar from "../../components/Navigation/Navbar";
 import{ CategoryFilterSort }from "../../hooks/SortFilter";
 
 type Product = {
@@ -18,7 +16,7 @@ function Child (){
 
   return (
     <>
-      <Navbar />
+    
 
    <CategoryFilterSort category="kids"  onFilterChange={setVisibleProducts}/>
 
@@ -30,7 +28,7 @@ function Child (){
         </div>
       </div>
 
-      <PuremodFooter />
+  
     </>
   );
 };
