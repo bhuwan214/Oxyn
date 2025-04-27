@@ -25,6 +25,8 @@ type SizeButtonProps = {
 
 
 
+
+
 const ProductDetail = () => {
   const { addToCart } = useCart();
   const { id } = useParams();
@@ -42,10 +44,16 @@ const ProductDetail = () => {
       toast.error("Please select a size before adding to cart.");
       return;
     }
-    addToCart({ ...product, size: selectedSize });
-  
-    // Animate the button
-   
+    if (!product) return; // Safe check
+
+  const productToAdd = {
+    ...product,
+    size: selectedSize,
+    quantity: 1, 
+  };
+
+  addToCart(productToAdd);
+
     toast.success('Item added to cart!', {
       style: {
         borderRadius: '10px',

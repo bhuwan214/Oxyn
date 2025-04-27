@@ -11,7 +11,11 @@ type Product = {
   size?: string; // add size here to Product!
 };
 
-type CartItem = Product & { quantity: number };
+
+type CartItem = Product & {
+  size: string;
+  quantity: number;
+};
 
 type CartContextType = {
   cart: CartItem[];
@@ -38,7 +42,7 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
     localStorage.setItem("cart", JSON.stringify(cart));
   }, [cart]);
 
-  const addToCart = (product: Product) => {
+  const addToCart = (product: CartItem) => {
     setCart((prev) => {
       const existing = prev.find(
         (item) => item.id === product.id && item.size === product.size

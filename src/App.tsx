@@ -12,7 +12,7 @@ import PuremodFooter from "./components/Navigation/Footer";
 function App(){
   return(
     <>
-    <Toaster position="top-center "  reverse-Order={false}/>
+    <Toaster position="top-center"  reverse-Order={false}/>
    
 
     <BrowserRouter>
