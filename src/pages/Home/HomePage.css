@@ -77,9 +77,9 @@
   }
 
   .box1 { grid-area: box1; background: #D7D6D7; max-height:500px}
-.box2 { grid-area: box2; background: #D7D6D7; background-image: url("src/assets/images/capguy.jpg"); background-size:cover; background-position:center;  }
-.box3 { grid-area: box3; background: #D7D6D7;background-image: url("src/assets/images/capguy3.jpg"); background-size:cover; background-position:center;  }
-.box4 { grid-area: box4; background: #D7D6D7; background-image: url("src/assets/images/capguy2.jpg"); background-size:cover; background-position:center; }
+.box2 { grid-area: box2; background: #D7D6D7; background-image: url("https://i.pinimg.com/1200x/53/41/ea/5341ea1431b251003367970f73370b8e.jpg"); background-size:cover; background-position:center;  }
+.box3 { grid-area: box3; background: #D7D6D7;background-image: url("https://i.pinimg.com/736x/59/95/7f/59957f40b3407e65bcd70121d6046aee.jpg"); background-position:center;  background-size: cover; }
+.box4 { grid-area: box4; background: #D7D6D7; background-image: url("https://i.pinimg.com/1200x/8e/13/f7/8e13f7c41d8952dfee08ee6564dafd77.jpg"); background-size:cover; background-position:center; }
 
 .circle{
   background-color: rgba(246, 247, 247, 0.479);
@@ -117,13 +117,13 @@ padding: 20px;
   }
 
   .box4:hover{
-    background-image: url("src/assets/images/capguy2v2.jpg");
+    background-image: url("https://i.pinimg.com/736x/85/20/4e/85204ef3767c4f902a0aa811160863b9.jpg");
     background-size:cover; 
     background-position:center;
     transition: ease-in-out 0.7s;
   }
   .box3:hover{
-    background-image: url("src/assets/images/cap.jpg");
+    background-image: url("https://i.pinimg.com/474x/4d/c4/e6/4dc4e6afd40f531fb66cbe58c24a7756.jpg");
     background-size:cover; 
     background-position:center;
     transition: ease-in-out 0.9s;

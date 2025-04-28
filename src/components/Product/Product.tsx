@@ -76,7 +76,7 @@ export default ShopEssentials;
         </div>
 
         {/* Right Text */}
-        <div className="flex-1 bg-green-800 text-white rounded-3xl p-6 flex flex-col justify-center">
+        <div className="flex-1 bg-green-800 text-white rounded-3xl p-6 flex flex-col justify-center ">
           <h2 className="text-3xl lg:text-4xl font-extrabold mb-6 ml-5">
             WE’RE CHANGING <br />THE WAY THINGS <br />GET MADE
           </h2>
@@ -104,7 +104,7 @@ export default ShopEssentials;
           </div>
         </div>
       </div>
-      
+
       {/* Bottom Section */}
       <div className="flex flex-col items-center gap-10">
         <h2 className="text-3xl lg:text-4xl font-extrabold text-center mt-5  mb-5">

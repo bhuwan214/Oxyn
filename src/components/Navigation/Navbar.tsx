@@ -46,7 +46,7 @@ function Navbar() {
     <nav className="bg-slate-800 text-white p-4 pl-10 pr-5 relative">
       <div className="container mx-auto flex justify-between items-center">
 
-        <Link to="/" className="text-3xl font-bold">Oxyn</Link>
+        <Link to="/Oxyn" className="text-3xl font-bold">Oxyn</Link>
 
         {/* Desktop Menu */}
         <div className="category hidden md:flex space-x-6 gap-8 capitalize">

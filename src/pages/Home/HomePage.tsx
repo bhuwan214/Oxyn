@@ -66,11 +66,11 @@ export const Description = () => {
 
         {/* 🫧 Bubble Images */}
         <ImageBubble
-          ImgUrl="src/assets/images/image-bubble1.jpg"
+          ImgUrl="https://i.pinimg.com/736x/bc/97/fe/bc97fe0444692ab21a6b004970f70e44.jpg"
           position="top-[102%] left-[35%]"
         />
         <ImageBubble
-          ImgUrl="src/assets/images/image-bubble2.jpg"
+          ImgUrl="https://i.pinimg.com/736x/17/f2/4d/17f24dade2d056ba5be49ffcf7dc7a7a.jpg"
           position="top-[130%] left-[68%]"
         />
       </div>
